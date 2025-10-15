@@ -1,1 +1,165 @@
+body {
+    margin: 0; /*  убирает стандартные отступы */
+    font-family: Arial, sans-serif; /* задает шрифт Arial. Если Arial недостапен любой стандартный*/
+    background: url("background/background.jpg") no-repeat center center fixed; /* Устанавливает фоновое изображение для всей страницы.*/
+    background-size: cover; /*Масштабирует фоновое изображение*/
+    color: #b7dff0; /* Задает основной цвет текста*/
+}
 
+/* Шапка сайта */
+header {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /*внешний отступ сверху*/
+    margin-bottom: 20px; /* внешний отступ снизу*/
+    text-align: center; /*Выравнивает текст внутри header по центру*/
+}
+
+/* Главный заголовок */
+header h1 {
+    font-size: 36px; /* размер шрифта*/
+    color: #77d0ff; /*цвет текста*/
+    margin-bottom: 10px; /* внешний отступ снизу*/
+}
+
+/* Подзаголовок в шапке */
+header p {
+    font-size: 18px;
+    color: #5b89e4;
+}
+
+/* Навигационная часть */
+.nav-link {
+    font-size: 18px;
+    color: #173eff;
+}
+
+/* выбранная навигационная часть */
+.nav-link.active {
+    font-weight: bold; /*жирное начертание шрифта*/
+    color: #3c3a40;
+    text-decoration: underline; /* подчеркивание*/
+}
+
+/* Стили для всех секций контента */
+section {
+    background-color: #c1e0ff90; /*фоновый цвет*/
+    margin: 20px auto; /*внешние отступы*/
+    padding: 20px; /*внутренние отступы*/
+    max-width: 800px; /*максимальную ширину*/
+    border-radius: 8px; /*Скругляет углы секции*/
+}
+
+/* Заголовки внутри секций */
+section h2 {
+    text-align: center;
+    color: #0d3ea0;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #77d0ff; /*линию-разделитель снизу*/
+    padding-bottom: 10px;
+}
+
+/* Общие стили для списков в секциях */
+section ul {
+    list-style-type: square; /*ип маркера списка*/
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Общие стили для списков в секциях */
+section#offers ul {
+    list-style-type: circle;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.top {
+    float: left;
+    margin-top: 20px;
+}
+
+/* нижний колонтитул */
+footer {
+    background-color: #c3eafbdd;
+    text-align: center;
+    padding: 15px; /*внутренние отступы*/
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Стили для упорядоченных списков в секциях - убираем стандартные маркеры */
+section ol {
+    list-style-type: none; /*убирает стандартные числовые маркеры у списка */
+    padding-left: 0; /* левый отступ*/
+}
+
+/* Стили для элементов списка - названия товаров */
+section li {
+    font-size: 20px;
+    font-weight: bold; /*текст жирным*/
+    color: #2c5ccc;
+    margin: 30px 0 15px 0;
+    text-align: center;
+    padding: 8px;
+    background: rgba(183, 212, 236, 0.6);
+    border-radius: 8px;
+}
+
+/* Контейнер для изображений с подписями */
+section figure {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+/* Стили для изображений */
+section img {
+    border-radius: 8px;
+    border: 3px solid #5b89e4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Стили для подписей под изображениями */
+section figcaption {
+    font-style: italic;
+    color: #5b89e4;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Навигационная панель между секциями */
+nav {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(193, 224, 255, 0.7);
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стили для ссылок в навигации */
+nav a {
+    color: #3b74e6;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Контейнер для кнопки "На стартовую позицию" */
+#top {
+    text-align: center;
+    margin: 30px 0;
+}
