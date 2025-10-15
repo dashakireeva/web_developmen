@@ -1,1 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("background/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Белый текст для темного фона */
+}
 
+/* Шапка сайта */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Простые стили для форм */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid #6ce6f9;
+}
+
+/* Стили для полей ввода */
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #6ce6f9;
+    border-radius: 5px;
+    color: white; /* Белый текст в полях */
+}
+
+/* Стили для кнопок */
+input[type="submit"], button {
+    background: #6ce6f9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, button:hover {
+    background: #5b89e4;
+}
+
+/* Выравнивание радио и чекбоксов */
+div {
+    margin: 10px 0;
+}
+
+label {
+    color: white; /* Белый текст для всех label */
+}
+
+/* Стили для placeholder */
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
