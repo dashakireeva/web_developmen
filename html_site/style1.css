@@ -1,1 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("background/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #b7dff0;
+}
 
+/* Шапка сайта */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Главный заголовок */
+header h1 {
+    font-size: 36px;
+    color: #77d0ff;
+    margin-bottom: 10px;
+}
+
+/* Подзаголовок в шапке */
+header p {
+    font-size: 18px;
+    color: #5b89e4;
+}
+
+/* Навигационная часть */
+.nav-link {
+    font-size: 18px;
+    color: #173eff;
+}
+
+/* выбранная навигационная часть */
+.nav-link.active {
+    font-weight: bold;
+    color: #3c3a40;
+    text-decoration: underline;
+}
+
+/* Стили для всех секций контента */
+section {
+    background-color: #c1e0ff90;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Заголовки внутри секций */
+section h2 {
+    text-align: center;
+    color: #0d3ea0;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #77d0ff;
+    padding-bottom: 10px;
+}
+
+/* Общие стили для списков в секциях */
+section ul {
+    list-style-type: square;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Общие стили для списков в секциях */
+section#offers ul {
+    list-style-type: circle;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.top {
+    float: left;
+    margin-top: 20px
+}
+
+/* нижний колонтитул */
+footer {
+    background-color: rgba(195, 234, 251, 0.867);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
